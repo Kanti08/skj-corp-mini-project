@@ -28,6 +28,3 @@ Route::post('/logout', [AuthController::class, 'logout']);
 
 //Route::middleware('auth')->group(function () {
     Route::get('/profile', [AuthController::class, 'profile']);
-    Route::resource('posts', BlogPostController::class);
-Route::post('/blog/{postId}/comments', [BlogPostController::class, 'store1'])->name('comments.store');
-Route::get('/js', [BlogPostController::class, 'js']);
