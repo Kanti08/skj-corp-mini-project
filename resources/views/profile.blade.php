@@ -11,6 +11,7 @@
     <p>Name: {{ $user->name }}</p>
     <p>Email: {{ $user->email }}</p>
     <p>Registered At: {{ $user->created_at }}</p>
+    <h3 style="color: pink">Hello</h3>
 @else
     <p>Please login to view your profile</p>
 @endif
